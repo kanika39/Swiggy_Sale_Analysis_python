@@ -44,7 +44,7 @@ import plotly.express as px
 ## Import Data
 
 ```python
-df = pd.read_excel("C:/Users/HP/Downloads/swiggy_data.xlsx")
+df = pd.read_excel("swiggy_data.xlsx")
 ```
 
 ## Metadata Overview
@@ -81,8 +81,6 @@ Average_order_value = round(df['Price (INR)'].mean(), 2)
 rating_count = df['Rating Count'].sum()
 total_orders = len(df)
 ```
-
-
 
 # 📈 The Analysis
 
@@ -283,7 +281,7 @@ fig.show()
 
 ### Results
 
-![Top 5 Cities by Sales](Charts_imgs/City_revenue.png)
+![City_Revenue](Charts_imgs/City_revenue.png)
 
 ### Insights
 
@@ -313,7 +311,7 @@ fig.show()
 ```
 
 ### Results
-![Weekly Revenue Trend](Charts_imgs/Weekly_revenue.png)
+![Weekly_Revenue](Charts_imgs/Weekly_revenue.png)
 
 ### Insights
 - Weekly revenue shows a generally stable pattern across the year with periodic fluctuations.
