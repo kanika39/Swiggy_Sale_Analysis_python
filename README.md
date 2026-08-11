@@ -265,7 +265,7 @@ Quarterly_summary = df.groupby('Quarter', as_index=False).agg(
 ### Visualise Data
 
 ```python
-Top_5_Cities = df.groupby('City', as_index=False)['Price (INR)'].sum() \
+Top_5_Cities = df.groupby('City', as_index=False)['Price (INR)'].sum() 
                  .sort_values("Price (INR)", ascending=False).head().reset_index()
 
 fig = px.bar(
